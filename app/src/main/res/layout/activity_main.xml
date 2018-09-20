@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.a09009.ui.MainActivity">
+
+    <TextView
+        android:id="@+id/title1"
+        android:text="购物车"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_height="0dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/zj"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="8" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <CheckBox
+            android:id="@+id/cb_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/js"
+            android:layout_alignBottom="@+id/js"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="全选/全不选"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/zj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="总价:"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/js"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/zj"
+            android:text="结算"
+            android:background="#f00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>1
+</LinearLayout>

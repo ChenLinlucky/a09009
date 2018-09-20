@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="@drawable/jia"
+    >
+    <Button
+        android:id="@+id/jian"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:text="-"/>
+    <TextView
+        android:id="@+id/text_num"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/jia"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:text="+"/>
+</LinearLayout>
